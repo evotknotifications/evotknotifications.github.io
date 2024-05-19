@@ -1,0 +1,4189 @@
+/*!***********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss ***!
+  \***********************************************************************************************************************************************************************/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
+/*!***************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss (1) ***!
+    \***************************************************************************************************************************************************************************/
+@import url(https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css);
+/*!***************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss (2) ***!
+    \***************************************************************************************************************************************************************************/
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+/*!***************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss (3) ***!
+    \***************************************************************************************************************************************************************************/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+/*!***************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss (4) ***!
+    \***************************************************************************************************************************************************************************/
+@import url(https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css);
+/*!***************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss (5) ***!
+    \***************************************************************************************************************************************************************************/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+/*!*********************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/styles/typography.css ***!
+    \*********************************************************************************************************/
+@font-face {
+  font-family: Calibre;
+  font-weight: 900;
+  font-style: normal;
+  src: url(https://www.evobanco.com/.galleries/home/CalibreWeb-Bold.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://www.evobanco.com/.galleries/home/CalibreWeb-Semibold.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://www.evobanco.com/.galleries/home/CalibreWeb-Medium.woff)
+    format("woff");
+}
+
+/* @font-face {
+    font-family: Calibre;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://www.evobanco.com/.galleries/home/CalibreWeb-Regular.woff) format("woff")
+  } */
+
+@font-face {
+  font-family: Calibre;
+  font-weight: 100;
+  font-style: normal;
+  src: url(https://www.evobanco.com/.galleries/home/CalibreWeb-Light.woff)
+    format("woff");
+}
+
+/*!***************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles/main.scss (6) ***!
+    \***************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.fc-pink {
+  color: #f4137b !important;
+}
+
+.bg-pink {
+  background-color: #f4137b !important;
+}
+
+.fc-yellow {
+  color: #ffb800 !important;
+}
+
+.bg-yellow {
+  background-color: #ffb800 !important;
+}
+
+.fc-cyan {
+  color: #48dfba !important;
+}
+
+.bg-cyan {
+  background-color: #48dfba !important;
+}
+
+.fc-white {
+  color: #fff !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.fc-gray-lightest {
+  color: #f4f4f4 !important;
+}
+
+.bg-gray-lightest {
+  background-color: #f4f4f4 !important;
+}
+
+.fc-gray-lighter {
+  color: #cfcfcf !important;
+}
+
+.bg-gray-lighter {
+  background-color: #cfcfcf !important;
+}
+
+.fc-gray-light {
+  color: #afafaf !important;
+}
+
+.bg-gray-light {
+  background-color: #afafaf !important;
+}
+
+.fc-gray {
+  color: #8f8f8f !important;
+}
+
+.bg-gray {
+  background-color: #8f8f8f !important;
+}
+
+.fc-gray-dark {
+  color: #6b6b6b !important;
+}
+
+.bg-gray-dark {
+  background-color: #6b6b6b !important;
+}
+
+.fc-gray-darker {
+  color: #4b4b4b !important;
+}
+
+.bg-gray-darker {
+  background-color: #4b4b4b !important;
+}
+
+.fc-black {
+  color: #000 !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.fc-violet {
+  color: #8345b9 !important;
+}
+
+.bg-violet {
+  background-color: #8345b9 !important;
+}
+
+.fc-trans {
+  color: transparent !important;
+}
+
+.bg-trans {
+  background-color: transparent !important;
+}
+
+.fs-11 {
+  font-size: 11px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-22 {
+  font-size: 22px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+.fs-26 {
+  font-size: 26px !important;
+}
+
+.fs-28 {
+  font-size: 28px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fs-32 {
+  font-size: 32px !important;
+}
+
+.fs-34 {
+  font-size: 34px !important;
+}
+
+.fs-38 {
+  font-size: 38px !important;
+}
+
+.fs-40 {
+  font-size: 40px !important;
+}
+
+.fs-44 {
+  font-size: 44px !important;
+}
+
+.fs-46 {
+  font-size: 46px !important;
+}
+
+.fs-48 {
+  font-size: 48px !important;
+}
+
+.fs-54 {
+  font-size: 54px !important;
+}
+
+.fs-64 {
+  font-size: 64px !important;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+.fs-46 {
+    font-size: 38px;
+   }
+}
+
+.fw-bold {
+  font-weight: 900 !important;
+}
+
+.fw-medium {
+  font-weight: 700 !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-thin {
+  font-weight: 100 !important;
+}
+
+.transform-upper {
+  text-transform: uppercase;
+}
+
+.transform-cap {
+  text-transform: capitalize;
+}
+
+.transform-none {
+  text-transform: none;
+}
+
+.arrow-small-right-pink {
+  width: 8px;
+  height: 8px;
+  transform: rotate(0deg);
+  object-fit: contain;
+}
+
+.arrow-small-down-pink {
+  width: 8px;
+  height: 8px;
+  transform: rotate(90deg);
+  object-fit: contain;
+}
+
+.right-pink-chevron-button-white {
+  display: inline-block;
+  font-size: 14px !important;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: medium none;
+  padding: 0;
+  height: 40px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.right-pink-chevron-button-white::after {
+  content: url(https://www.evobanco.com/.galleries/home/ic-chevron-pink.svg);
+  margin-left: 4px;
+  padding: 0 2px;
+  vertical-align: -1px;
+}
+
+.right-pink-chevron-button-black {
+  display: inline-block;
+  font-size: 14px !important;
+  color: #000;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: medium none;
+  padding: 0;
+  height: 40px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.right-pink-chevron-button-black::after {
+  content: url(https://www.evobanco.com/.galleries/home/ic-chevron-pink.svg);
+  margin-left: 4px;
+  padding: 0 2px;
+  vertical-align: -1px;
+}
+
+.pink-button {
+  height: 40px;
+  color: #fff;
+  background-color: #f4137b;
+  border: medium none;
+  border-radius: 4px;
+  font-size: 14px !important;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .pink-button {
+    min-width: 215px;
+  }
+  .transparent-button {
+    min-width: 215px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .pink-button {
+    min-width: 175px;
+  }
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .buttons-container .transparent-button {
+    width: 100%;
+  }
+}
+.pink-button.full-width {
+  min-width: none;
+  width: 100%;
+}
+
+.transparent-button {
+  height: 40px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: medium none;
+  border-radius: 4px;
+  font-size: 14px !important;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 15px !important; 
+}
+.transparent-button.full-width {
+  min-width: none;
+  width: 100%;
+}
+.transparent-button.w-60 {
+  min-width: none;
+  width: 60%;
+}
+
+body {
+  font-family: Calibre, sans-serif !important;
+  line-height: 1;
+}
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(https://www.evobanco.com/.galleries/home/img_desktop_hero_ci_promo.png)
+    url(https://www.evobanco.com/.galleries/home/img-header-hipotecas_3x.jpg)
+    url(https://www.evobanco.com/.galleries/home/img_desktop_hero_blackrock.jpg)
+    url(https://www.evobanco.com/.galleries/home/img-agrega-tus-cuentas_3x.jpg)
+    url(https://www.evobanco.com/.galleries/home/img-map_3x.jpg);
+}
+
+.master_layout .m_aside,
+.master_layout .m_footer {
+  background-color: #000;
+  margin: 0;
+  padding: 60px 20px 30px;
+  max-width: unset;
+}
+
+.master_layout .m_footer {
+  padding: 0 20px 10px;
+}
+
+.master_layout .m_aside .m_aside_box,
+.master_layout .m_footer .m_license {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.master_layout,
+#eh_main_container {
+  max-width: 1440px;
+  background-color: white;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1280px) {
+  .section-container {
+    padding: 60px 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-container {
+    padding: 60px 32px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .section-container {
+    padding: 40px 24px;
+  }
+}
+
+.wrap-parent {
+  margin: 0 -12px;
+}
+
+.custom-mobile-accordion {
+  margin: 0;
+  padding: 0;
+  font-family: Calibre, sans-serif;
+}
+.custom-mobile-accordion .ui-accordion-header {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0.25rem 0;
+  padding: 1rem;
+  border: medium none;
+  border-radius: 0;
+}
+.custom-mobile-accordion .ui-accordion-header:last-of-type {
+  margin-bottom: 0;
+}
+.custom-mobile-accordion .ui-accordion-header .ui-accordion-header-icon {
+  display: none;
+}
+.custom-mobile-accordion .ui-accordion-content {
+  border: medium none;
+  background-color: transparent;
+  padding: 16px;
+}
+
+.custom-carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.custom-carousel-container .custom-carousel {
+  display: flex;
+  width: auto;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .custom-carousel-container .custom-carousel-item {
+    width: calc(100vw - 32px) !important;
+  }
+}
+.custom-carousel-container .custom-carousel-item.no-side-margin {
+  width: 100vw !important;
+  margin: 0 !important;
+}
+.custom-carousel-container .custom-carousel-item:not(:last-child) {
+  margin-right: 14px;
+}
+.custom-carousel-container .mCSB_buttonLeft,
+.custom-carousel-container .mCSB_buttonRight {
+  position: relative !important;
+  top: unset !important;
+  left: unset !important;
+  right: unset !important;
+  background: none;
+  width: 32px !important;
+  height: 32px !important;
+  opacity: 1;
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+}
+.custom-carousel-container .mCSB_buttonWrapper {
+  position: absolute;
+  padding: 2.5px;
+  top: 3.5px;
+  border: 1px solid #6b6b6b;
+  border-radius: 50%;
+  position: absolute;
+}
+.custom-carousel-container .mCSB_buttonWrapper.mCSB_buttonWrapperLeft {
+  right: 54px !important;
+}
+.custom-carousel-container .mCSB_buttonWrapper.mCSB_buttonWrapperRight {
+  right: 0 !important;
+}
+.custom-carousel-container
+  .mCSB_buttonWrapper.mCSB_buttonWrapperRight
+  .mCSB_buttonRight {
+  left: 2px !important;
+}
+.custom-carousel-container .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: -32px;
+}
+.custom-carousel-container .mCSB_draggerContainer {
+  top: 16px !important;
+}
+@media only screen and (min-width: 1280px) {
+  .custom-carousel-container .mCSB_draggerContainer {
+    right: 120px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .custom-carousel-container .mCSB_draggerContainer {
+    right: 120px !important;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .custom-carousel-container .mCSB_draggerContainer {
+    right: 115px !important;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .custom-carousel-container .mCSB_draggerContainer .mCSB_dragger {
+    width: 320px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .custom-carousel-container .mCSB_draggerContainer .mCSB_dragger {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .custom-carousel-container .mCSB_draggerContainer .mCSB_dragger {
+    width: 80px;
+  }
+}
+
+ul.pink-dotted-list {
+  list-style: none;
+  position: relative;
+}
+ul.pink-dotted-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+ul.pink-dotted-list li::before {
+  content: "";
+  background-color: #f4137b;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 10px 0 0 -30px;
+}
+
+.top-header {
+  height: 55px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+.top-header .slogan-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-header .slogan-container .slogan-evo {
+  font-family: Calibre;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0 15px;
+}
+.top-header .slogan-container .slogan-evo .slogan-evo-1 {
+  font-weight: 600;
+}
+.top-header .slogan-container .slogan-evo .about {
+  text-transform: uppercase;
+  margin-left: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+@media (max-width: 990px) {
+  .col-lg-8 {
+    flex: 0 0 auto !important;
+    width: 90.666667% !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .top-header {
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+.top-header {
+    height: 50px;
+    font-size: 16px;
+}
+}
+@media (max-width: 575px) {
+
+  .top-header .slogan-container .slogan-evo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .top-header .slogan-container .slogan-evo .slogan-evo-1 {
+    float: left;
+  }
+  .top-header .slogan-container .slogan-evo .about {
+    float: right;
+  }
+}
+
+@-webkit-keyframes backgroundZoom {
+  from {
+    background-size: 118% 118%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+@-moz-keyframes backgroundZoom {
+  from {
+    background-size: 118% 118%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+@-o-keyframes backgroundZoom {
+  from {
+    background-size: 118% 118%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+@keyframes backgroundZoom {
+  from {
+    background-size: 118% 118%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+@-webkit-keyframes backgroundZoomY {
+  from {
+    background-size: auto 118%;
+  }
+  to {
+    background-size: auto 100%;
+  }
+}
+@-moz-keyframes backgroundZoomY {
+  from {
+    background-size: auto 118%;
+  }
+  to {
+    background-size: auto 100%;
+  }
+}
+@-o-keyframes backgroundZoomY {
+  from {
+    background-size: auto 118%;
+  }
+  to {
+    background-size: auto 100%;
+  }
+}
+@keyframes backgroundZoomY {
+  from {
+    background-size: auto 118%;
+  }
+  to {
+    background-size: auto 100%;
+  }
+}
+@-webkit-keyframes amiFadeInUp {
+  from {
+    transform: translate3d(0, 10%, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes amiFadeInUp {
+  from {
+    transform: translate3d(0, 10%, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-o-keyframes amiFadeInUp {
+  from {
+    transform: translate3d(0, 10%, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes amiFadeInUp {
+  from {
+    transform: translate3d(0, 10%, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes amiFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes amiFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes amiFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes amiFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes amiResizeIn {
+  from {
+    height: 78px;
+    min-height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    height: 310px;
+    background-color: transparent;
+  }
+}
+@-moz-keyframes amiResizeIn {
+  from {
+    height: 78px;
+    min-height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    height: 310px;
+    background-color: transparent;
+  }
+}
+@-o-keyframes amiResizeIn {
+  from {
+    height: 78px;
+    min-height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    height: 310px;
+    background-color: transparent;
+  }
+}
+@keyframes amiResizeIn {
+  from {
+    height: 78px;
+    min-height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    height: 310px;
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes amiResizeOut {
+  from {
+    height: 310px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: transparent;
+    border: 4px solid #fff;
+  }
+  to {
+    height: 78px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 4px solid #fff;
+  }
+}
+@-moz-keyframes amiResizeOut {
+  from {
+    height: 310px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: transparent;
+    border: 4px solid #fff;
+  }
+  to {
+    height: 78px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 4px solid #fff;
+  }
+}
+@-o-keyframes amiResizeOut {
+  from {
+    height: 310px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: transparent;
+    border: 4px solid #fff;
+  }
+  to {
+    height: 78px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 4px solid #fff;
+  }
+}
+@keyframes amiResizeOut {
+  from {
+    height: 310px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: transparent;
+    border: 4px solid #fff;
+  }
+  to {
+    height: 78px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 4px solid #fff;
+  }
+}
+
+.main_content.animated .amiFadeInUp {
+  animation-name: amiFadeInUp;
+  -webkit-animation-name: amiFadeInUp;
+}
+
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  .animete-only-desktop {
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+}
+
+.ami-animate-delay-1 {
+  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-1 {
+    animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
+  }
+}
+.ami-animate-delay-2 {
+  animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-2 {
+    animation-delay: 750ms;
+    -webkit-animation-delay: 750ms;
+  }
+}
+.ami-animate-delay-3 {
+  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-3 {
+    animation-delay: 1000ms;
+    -webkit-animation-delay: 1000ms;
+  }
+}
+.ami-animate-delay-4 {
+  animation-delay: 1250ms;
+  -webkit-animation-delay: 1250ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-4 {
+    animation-delay: 1250ms;
+    -webkit-animation-delay: 1250ms;
+  }
+}
+.ami-animate-delay-5 {
+  animation-delay: 1500ms;
+  -webkit-animation-delay: 1500ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-5 {
+    animation-delay: 1500ms;
+    -webkit-animation-delay: 1500ms;
+  }
+}
+.ami-animate-delay-6 {
+  animation-delay: 1750ms;
+  -webkit-animation-delay: 1750ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-6 {
+    animation-delay: 1750ms;
+    -webkit-animation-delay: 1750ms;
+  }
+}
+.ami-animate-delay-7 {
+  animation-delay: 2000ms;
+  -webkit-animation-delay: 2000ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .ami-animate-do-delay-7 {
+    animation-delay: 2000ms;
+    -webkit-animation-delay: 2000ms;
+  }
+}
+#account_mortgage_investment_container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  position: relative;
+  background: transparent;
+}
+#account_mortgage_investment_container .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#account_mortgage_investment_container .background.account {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_background_home_cuenta_inteligente.webp);
+}
+#account_mortgage_investment_container .background.account.animated {
+  /*animation: backgroundZoomY 2s 1;
+  -webkit-animation: backgroundZoomY 2s 1;*/
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container .background.account.animated {
+    /*animation-name: backgroundZoom;
+    -webkit-animation-name: backgroundZoom;*/
+  }
+}
+#account_mortgage_investment_container .background.mortgage {
+  background-image: url(https://www.evobanco.com/.galleries/home/img-header-hipotecas_3x.jpg);
+}
+#account_mortgage_investment_container .background.mortgage.animated {
+  animation: backgroundZoomY 2s 1;
+  -webkit-animation: backgroundZoomY 2s 1;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container .background.mortgage.animated {
+    animation-name: backgroundZoom;
+    -webkit-animation-name: backgroundZoom;
+  }
+}
+#account_mortgage_investment_container .background.investment {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_desktop_hero_blackrock.jpg);
+}
+#account_mortgage_investment_container .background.investment.animated {
+  animation: backgroundZoomY 2s 1;
+  -webkit-animation: backgroundZoomY 2s 1;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container .background.investment.animated {
+    animation-name: backgroundZoom;
+    -webkit-animation-name: backgroundZoom;
+  }
+}
+#account_mortgage_investment_container.mortgage-content .right-content {
+  display: none;
+}
+#account_mortgage_investment_container.investment-content .right-content {
+  display: none;
+}
+#account_mortgage_investment_container .account-mortgage-investment {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 0;
+  color: #fff;
+}
+#account_mortgage_investment_container .account-mortgage-investment .right-content .refund-container {
+     display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #000;
+    border-top: unset;
+    color: #000;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 0.4rem;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container .account-mortgage-investment {
+    flex-direction: row;
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container .account-mortgage-investment {
+    flex-direction: column;
+    height: 700px;
+  }
+  #account_mortgage_investment_container .background.investment {
+    background-image: url(https://www.evobanco.com/.galleries/home/img_desktop_hero_blackrock.jpg);
+    right: -60px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .refund-container {
+        gap: 25px;
+        align-items: flex-start;
+    }
+  #account_mortgage_investment_container {
+    padding-bottom: 200px !important;
+  }
+  #account_mortgage_investment_container .account-mortgage-investment {
+    flex-direction: column;
+    min-height: 580px;
+  }
+  #account_mortgage_investment_container .background.account {
+    background-image: url(https://www.evobanco.com/.galleries/home/img_background_home_cuenta_inteligente_mobile.webp);
+  }
+  #account_mortgage_investment_container .background.investment {
+    background-image: url(https://www.evobanco.com/.galleries/home/img_tab_hero_blackrock.jpg);
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group {
+    flex-direction: column;
+    width: 20%;
+    min-width: 320px;
+    height: 100%;
+    justify-content: start;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group {
+    flex-direction: row;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group {
+    margin: 0 -32px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group {
+    margin: 0 -24px;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option {
+    margin: 0.25rem;
+    padding: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option
+    .big-title {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+    flex-grow: 1;
+    margin: 0.5rem 0;
+    width: 95%;
+    color: #fff;
+  }
+  #account_mortgage_investment_container .sup {
+    font-size: 17px;
+    top: -2.2rem;
+    left: 0.2rem;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option
+    .subtitle {
+    text-transform: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated {
+    animation: amiResizeOut 1s 1;
+    -webkit-animation: amiResizeOut 1s 1;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated
+    .big-title,
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated
+    a {
+    animation: amiFadeOut 1s 1 both;
+    -webkit-animation: amiFadeOut 1s 1 both;
+    display: block;
+    height: 0;
+    margin: 0;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated.active {
+    animation-name: amiResizeIn;
+    -webkit-animation-name: amiResizeIn;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated.active
+    .big-title,
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated.active
+    a {
+    animation: amiFadeInUp 1s 1 both;
+    -webkit-animation: amiFadeInUp 1s 1 both;
+    height: auto;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated.active
+    .big-title {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    margin: 8px 0;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.option-animated.active
+    a {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option {
+    margin: 0 1px;
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option
+  .title {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option
+  .title
+  .title-second-words {
+  color: #fff;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option
+    .title
+    .title-second-words {
+    display: none;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option
+  .big-title,
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option
+  .subtitle,
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option
+  .right-pink-chevron-button-white {
+  display: none;
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .left-option-group
+  .option.active {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.active {
+    min-height: 310px;
+    border: 4px solid #fff;
+    border-radius: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.active
+    .title {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.active
+    .big-title,
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.active
+    .subtitle {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .left-option-group
+    .option.active
+    .right-pink-chevron-button-white {
+    display: inline-block;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content {
+    width: 65%;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content.mortgage-content,
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content.investment-content {
+  display: none;
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .risk-score-table-container
+  > .risk-score-table {
+  display: flex;
+  color: #000;
+  font-size: 11px;
+  line-height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .risk-score-table-container
+    > .risk-score-table {
+    flex-direction: column;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .risk-score-table-container
+  > .risk-score-table
+  .risk-score-table-cell {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .risk-score-table-container
+    > .risk-score-table
+    .risk-score-table-cell.cell-1 {
+    width: 33.33%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .risk-score-table-container
+    > .risk-score-table
+    .risk-score-table-cell.cell-1 {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .risk-score-table-container
+    > .risk-score-table
+    .risk-score-table-cell.cell-2 {
+    width: 66.66%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .risk-score-table-container
+    > .risk-score-table
+    .risk-score-table-cell-separator {
+    border-left: 1px solid #000;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .risk-score-table-container
+    > .risk-score-table
+    .risk-score-table-cell-separator {
+    border-top: 1px solid #000;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .title {
+    display: none;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .big-title {
+  font-weight: 900;
+ 
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .big-title
+  sup {
+  font-size: 20px;
+  top: -1.2rem;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title {
+    font-size: 62px;
+    line-height: 1;
+    width: 91%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account-big-title {
+    font-size: 30px;
+    line-height: 1;
+    width: 98%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title {
+    font-size: 46px;
+    line-height: 48px;
+    width: 69%;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account {
+    font-size: 45px;
+    line-height: 1;
+    width: 91%;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account
+    span {
+    font-size: 56px;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account
+    span
+    sup {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account {
+      font-size: 38px;
+    line-height: 1.07;
+    width: 100%;
+    padding-top: 17px;
+    /* padding-bottom: 30px; */
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account
+    span {
+    font-size: 40px;
+    /*letter-spacing: -0.75px;*/
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title.smart-account
+    span
+    sup {
+    top: -0.8rem;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .big-title {
+    font-size: 38px;
+    line-height: 34px;
+    width: 90%;
+  }
+}
+
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .info-text {
+  font-weight: 100;
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .info-text2 {
+  font-weight: 600;
+  font-size: 14px;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .info-text {
+    font-size: 24px;
+    width: 83%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .info-text {
+    font-size: 16px;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .info-text {
+    font-size: 16px;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .info-text2 {
+    font-size: 12px;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .info-text2.smart-account {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.67;
+    text-transform: uppercase;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .interest-rate {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .buttons-container {
+  display: flex;
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .buttons-container.remuneration-text {
+  font-size: 14px;
+  line-height: normal;
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container.remuneration-text
+    p {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container.remuneration-text
+    p {
+    width: 65%;
+  }
+}
+
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .remuneration-text-2 {
+  display: none;
+}
+
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .remuneration-text-2 {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .remuneration-text-2 {
+    display: inline-block;
+  }
+}
+
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .remuneration-text-3 {
+  display: none;
+}
+
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .remuneration-text-3 {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container {
+    flex-direction: column;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container.smart-account {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container
+    .pink-button {
+    width: 100%;
+  }
+}
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .buttons-container
+  .right-pink-chevron-button-white {
+  display: none;
+}
+
+#account_mortgage_investment_container
+  .account-mortgage-investment
+  .right-content
+  .buttons-container
+  .right-pink-chevron-button-white.smart-account-link {
+  display: inline-block;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container
+    .right-pink-chevron-button-white.smart-account-link {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container
+    .right-pink-chevron-button-white {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container
+    .right-pink-chevron-button-white.smart-account-link {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #account_mortgage_investment_container
+    .account-mortgage-investment
+    .right-content
+    .buttons-container
+    .right-pink-chevron-button-white {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #account_mortgage_investment_container.account-content .right-content {
+    margin-top: 50px;
+    justify-content: space-between;
+    max-height: 485px;
+  }
+}
+
+#more_products_container .more-products {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#more_products_container .more-products .more-products-title {
+  color: #000;
+  font-size: 28px;
+}
+#more_products_container .more-products [class^="products-carousel-item"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: border-box;
+}
+@media only screen and (min-width: 1280px) {
+  #more_products_container .more-products [class^="products-carousel-item"] {
+    width: 393px;
+    height: 417px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_products_container .more-products [class^="products-carousel-item"] {
+    width: 328px;
+    height: 417px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #more_products_container .more-products [class^="products-carousel-item"] {
+    width: 312px;
+    height: 369px;
+  }
+}
+#more_products_container
+  .more-products
+  [class^="products-carousel-item"]
+  .item-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+#more_products_container
+  .more-products
+  [class^="products-carousel-item"]
+  .product-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+#more_products_container
+  .more-products
+  [class^="products-carousel-item"]
+  .product-body
+  .product-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+#more_products_container
+  .more-products
+  [class^="products-carousel-item"]
+  .product-body
+  .product-big-title {
+  font-weight: 900;
+  line-height: 1;
+  color: #fff;
+}
+@media only screen and (min-width: 1280px) {
+  #more_products_container
+    .more-products
+    [class^="products-carousel-item"]
+    .product-body
+    .product-big-title {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_products_container
+    .more-products
+    [class^="products-carousel-item"]
+    .product-body
+    .product-big-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #more_products_container
+    .more-products
+    [class^="products-carousel-item"]
+    .product-body
+    .product-big-title {
+    font-size: 28px;
+  }
+}
+#more_products_container .more-products .products-carousel-item-1 {
+  background-image: url(https://www.evobanco.com/.galleries/home/foto-carrusel-01_3x.jpg);
+}
+#more_products_container .more-products .products-carousel-item-2 {
+  background-image: url(https://www.evobanco.com/.galleries/home/foto-carrusel-02_3x.jpg);
+}
+#more_products_container .more-products .products-carousel-item-3 {
+  background-image: url(https://www.evobanco.com/.galleries/home/foto-carrusel-03_3x.jpg);
+}
+#more_products_container .more-products .products-carousel-item-4 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_novedades4_dsk_tab_mov_xhdpi.jpg);
+}
+#more_products_container .more-products .products-carousel-item-5 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img-banner-producto-cashback-over.webp);
+}
+#more_products_container
+  .more-products
+  .custom-carousel-item:hover
+  .item-overlay {
+  background-color: rgba(0, 0, 0, 0.44);
+}
+#more_products_container
+  .more-products
+  .custom-carousel-item:hover
+  .product-button
+  button.transparent-button {
+  background-color: #f4137b;
+}
+
+@-webkit-keyframes msZoomIn {
+  from {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-moz-keyframes msZoomIn {
+  from {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-o-keyframes msZoomIn {
+  from {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes msZoomIn {
+  from {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes msActiveIn {
+  from {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@-moz-keyframes msActiveIn {
+  from {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@-o-keyframes msActiveIn {
+  from {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes msActiveIn {
+  from {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes msActiveOut {
+  from {
+    background-color: transparent;
+    border: solid 4px;
+    border-color: #fff;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+  }
+}
+@-moz-keyframes msActiveOut {
+  from {
+    background-color: transparent;
+    border: solid 4px;
+    border-color: #fff;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+  }
+}
+@-o-keyframes msActiveOut {
+  from {
+    background-color: transparent;
+    border: solid 4px;
+    border-color: #fff;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+  }
+}
+@keyframes msActiveOut {
+  from {
+    background-color: transparent;
+    border: solid 4px;
+    border-color: #fff;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+  }
+}
+#more_services_container {
+  background: linear-gradient(45deg, #ae7e84 100%, #a7786e 0%, #7b4f55 100%);
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #more_services_container {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container {
+    padding-top: 0;
+  }
+}
+#more_services_container .more-services {
+  display: flex;
+  height: 640px;
+  padding: 0;
+  color: #fff;
+  background-size: cover;
+  background-origin: border-box;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services {
+    align-items: center;
+    flex-direction: row;
+    height: 640px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services {
+    flex-direction: column;
+    height: 700px;
+  }
+}
+#more_services_container .more-services .left-option-group {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services .left-option-group {
+    flex-direction: column;
+    flex: 0 0 216px;
+    height: 70%;
+    margin-right: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services .left-option-group {
+    flex-direction: row;
+    flex: 0 0;
+    height: auto;
+    margin: 0 -32px;
+    margin-bottom: 4rem;
+  }
+  #more_services_container .more-services .left-option-group .option {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin: 0 1px;
+  }
+  #more_services_container
+    .more-services
+    .left-option-group
+    .option.add-your-accounts {
+    padding: 1.5rem 10px;
+  }
+}
+#more_services_container .more-services .left-option-group .option {
+  display: flex;
+  align-content: center;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services .left-option-group .option {
+    padding: 2rem;
+    border-radius: 4px;
+  }
+  #more_services_container
+    .more-services
+    .left-option-group
+    .option:not(.amiFadeInUp) {
+    animation: msActiveOut 5s 1 both;
+    -webkit-animation: msActiveOut 5s 1 both;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services .left-option-group .option {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin: 0 1px;
+  }
+}
+#more_services_container .more-services .left-option-group .option .title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+  color: #fff;
+}
+#more_services_container .more-services .left-option-group .option.active {
+  background-color: transparent;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services .left-option-group .option.active {
+    border: 4px solid #fff;
+  }
+  #more_services_container
+    .more-services
+    .left-option-group
+    .option.active:not(.amiFadeInUp) {
+    animation: msActiveIn 5s 1 both;
+    -webkit-animation: msActiveIn 5s 1 both;
+  }
+}
+#more_services_container .more-services .content-container {
+  display: flex;
+  height: 70%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services .content-container {
+    height: 65%;
+  }
+}
+#more_services_container .more-services .right-content {
+  display: none;
+  text-transform: uppercase;
+  height: 100%;
+}
+#more_services_container .more-services .right-content.active {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services .right-content {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services .right-content {
+    width: 35%;
+  }
+}
+#more_services_container .more-services .right-content .icon {
+  display: flex;
+}
+#more_services_container .more-services .right-content .icon img {
+  width: 34px;
+}
+#more_services_container .more-services .right-content .title {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  width: 100%;
+}
+#more_services_container .more-services .right-content .big-title {
+  font-weight: 900;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services .right-content .big-title {
+    font-size: 64px;
+    line-height: 57.6px;
+    max-width: 345px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services .right-content .big-title {
+    font-size: 44px;
+    line-height: 39.6px;
+  }
+}
+#more_services_container .more-services .right-content .info-text {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.25;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: none;
+}
+#more_services_container
+  .more-services
+  .right-content
+  .read-more-button
+  button {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  height: 40px;
+  border: medium none;
+}
+#more_services_container .more-services .image-container {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  #more_services_container .more-services .image-container {
+    max-width: 450px;
+    width: 100%;
+    margin: -90px 0 0 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #more_services_container .more-services .image-container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+#more_services_container .more-services .image-container.active {
+  display: block;
+}
+#more_services_container .more-services .image-container.active.animated {
+  animation: msZoomIn 2s 1 both;
+}
+
+#more_services_container_mobile {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (min-width: 768px) {
+  #more_services_container_mobile {
+    display: none;
+  }
+}
+#more_services_container_mobile .more-services {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #more_services_container_mobile .more-services .mCSB_scrollTools_horizontal {
+    margin: 0 1rem;
+  }
+}
+#more_services_container_mobile .more-services .more-services-title {
+  color: #000;
+  font-size: 32px;
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  width: 400px;
+  height: 544px;
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"]
+  .item-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 40px 24px;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"]
+  .icon {
+  display: flex;
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"]
+  .title {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  width: 100%;
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"]
+  .big-title {
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 900;
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"]
+  .info-text {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.25;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: none;
+}
+#more_services_container_mobile
+  .more-services
+  [class^="services-carousel-item"]
+  .read-more-button
+  button {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  height: 40px;
+  border: medium none;
+}
+#more_services_container_mobile .more-services .services-carousel-item-1 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_bmi_tink_mov.jpg);
+}
+#more_services_container_mobile .more-services .services-carousel-item-2 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_bmi_finleap_mov.jpg);
+}
+#more_services_container_mobile .more-services .services-carousel-item-3 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_bmi_informe_mov.jpg);
+}
+#more_services_container_mobile .more-services .services-carousel-item-4 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_bmi_travelcash_mov.jpg);
+}
+#more_services_container_mobile .more-services .services-carousel-item-5 {
+  background-image: url(https://www.evobanco.com/.galleries/home/img_bmi_aplazar_mov.jpg);
+}
+
+#latest_novelties_container .latest-novelties {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#latest_novelties_container .latest-novelties .latest-novelties-title {
+  font-size: 32px;
+}
+#latest_novelties_container
+  .latest-novelties
+  [class^="novelties-carousel-item"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  margin-right: 135px;
+}
+#latest_novelties_container
+  .latest-novelties
+  [class^="novelties-carousel-item"]:last-child {
+  margin: 0;
+}
+
+#latest_novelties_container
+  .latest-novelties
+  [class^="novelties-carousel-item"]
+  .novelty-image {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding: 2rem;
+}
+#latest_novelties_container
+  .latest-novelties
+  [class^="novelties-carousel-item"]
+  .novelty-big-title {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+}
+#latest_novelties_container
+  .latest-novelties
+  [class^="novelties-carousel-item"]
+  .novelty-big-title::after {
+  display: flex;
+  content: "";
+  width: 64px;
+  background-color: #f4137b;
+  height: 1px;
+  margin: 24px auto 0;
+}
+#latest_novelties_container
+  .latest-novelties
+  [class^="novelties-carousel-item"]
+  .novelty-title {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  max-width: 250px;
+}
+#latest_novelties_container
+  .latest-novelties
+  .novelties-carousel-item-1
+  .novelty-image {
+  content: url(https://www.evobanco.com/.galleries/home/mobile-crsl-01_3x.jpg);
+}
+#latest_novelties_container
+  .latest-novelties
+  .novelties-carousel-item-2
+  .novelty-image {
+  content: url(https://www.evobanco.com/.galleries/home/mobile-crsl-02_3x.jpg);
+}
+#latest_novelties_container
+  .latest-novelties
+  .novelties-carousel-item-3
+  .novelty-image {
+  content: url(https://www.evobanco.com/.galleries/home/mobile-crsl-03_3x.jpg);
+}
+#latest_novelties_container
+  .latest-novelties
+  .novelties-carousel-item-4
+  .novelty-image {
+  content: url(https://www.evobanco.com/.galleries/home/mobile-crsl-03_3x.jpg);
+}
+
+.map-marker-animate-duration {
+  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.25s;
+}
+
+.map-marker-delay-1 {
+  animation-delay: 1.15s;
+  -webkit-animation-delay: 1.15s;
+}
+
+.map-marker-delay-2 {
+  animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+}
+
+.map-marker-delay-3 {
+  animation-delay: 1.65s;
+  -webkit-animation-delay: 1.65s;
+}
+
+.map-marker-delay-4 {
+  animation-delay: 1.9s;
+  -webkit-animation-delay: 1.9s;
+}
+
+#app_markets_and_betatesters_container {
+  background-color: #f4f4f4;
+}
+#app_markets_and_betatesters_container .app-markets-and-betatesters {
+  display: flex;
+  padding: 0;
+  color: #000;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #app_markets_and_betatesters_container .app-markets-and-betatesters {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .app-markets-container,
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .betatesters-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .app-markets-container,
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .betatesters-container {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .app-markets-container,
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .betatesters-container {
+    width: 100%;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .central-separator {
+  background-color: #cfcfcf;
+}
+@media only screen and (min-width: 768px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .central-separator {
+    width: 1px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .central-separator {
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .app-markets-container {
+    padding-right: 3rem;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .app-markets-container
+  .icon-container {
+  background-color: #000;
+}
+@media only screen and (min-width: 768px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .betatesters-container {
+    padding-left: 3rem;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .betatesters-container
+  .icon-container {
+  background-color: #fff;
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  min-height: 64px;
+  border-radius: 20px;
+  margin: 0 1rem 1rem 0;
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .icon-container
+  img {
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5 0 50%;
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .big-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 0) and (max-width: 1023px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .rest-container
+    .big-title {
+    min-height: 66px;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .info-text {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  min-height: 50px;
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .rest-container
+    .info-text {
+    font-size: 16px;
+    width: 70%;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .badges_and_buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 768px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .rest-container
+    .badges_and_buttons {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .rest-container
+    .badges_and_buttons {
+    min-height: 112px;
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #app_markets_and_betatesters_container
+    .app-markets-and-betatesters
+    .rest-container
+    .badges_and_buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .badges_and_buttons
+  a {
+  text-align: left;
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .badges_and_buttons
+  img,
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .badges_and_buttons
+  button {
+  max-width: 135px;
+  max-height: 40px;
+  margin: 0 0.5rem 1rem 0;
+}
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .badges_and_buttons
+  img:not(:last-child)::after,
+#app_markets_and_betatesters_container
+  .app-markets-and-betatesters
+  .rest-container
+  .badges_and_buttons
+  button:not(:last-child)::after {
+  content: "";
+  margin-right: 1rem;
+}
+
+#pay_with_your_cellphone_container .pay-with-your-cellphone {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  .pay-with-your-cellphone-title {
+  font-size: 32px;
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #pay_with_your_cellphone_container
+    .pay-with-your-cellphone
+    .pay-with-your-cellphone-title {
+    font-size: 28px;
+  }
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  .pay-with-your-cellphone-subtitle {
+  font-size: 22px;
+  font-weight: 100;
+  text-transform: none;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  [class^="payment-methods-carousel-item"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  width: 280px;
+  height: 340px;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  [class^="payment-methods-carousel-item"]:not(:last-child) {
+  margin-right: 14px;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  [class^="payment-methods-carousel-item"]
+  .payment-method-image {
+  display: flex;
+  flex-grow: 0.5;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  [class^="payment-methods-carousel-item"]
+  .payment-method-image
+  img {
+  min-height: 40px;
+  max-height: 48px;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  [class^="payment-methods-carousel-item"]
+  .payment-method-big-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+#pay_with_your_cellphone_container
+  .pay-with-your-cellphone
+  [class^="payment-methods-carousel-item"]
+  .payment-method-title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+}
+#pay_with_your_cellphone_container .pay-with-your-cellphone hr {
+  height: 1.5px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
+
+#evo_place_container {
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 1280px) {
+  #evo_place_container {
+    background-image: url(https://www.evobanco.com/.galleries/home/img_evo_experience_desktop.png);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #evo_place_container {
+    background-image: url(https://www.evobanco.com/.galleries/home/img_evo_experience_tablet.png);
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container {
+    justify-content: flex-start;
+    background-image: url(https://www.evobanco.com/.galleries/home/img_evo_experience_mobile.png);
+    background-size: 100% 100%;
+  }
+}
+#evo_place_container .evo-place {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1280px) {
+  #evo_place_container .evo-place {
+    width: 37%;
+    height: 500px;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  #evo_place_container .evo-place {
+    width: 45%;
+    height: 660px;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #evo_place_container .evo-place {
+    width: 41%;
+    height: 510px;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container .evo-place {
+    width: 100%;
+    height: 460px;
+    margin-bottom: 300px;
+  }
+}
+#evo_place_container .evo-place .evo-place-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container .evo-place .evo-place-title {
+    text-align: left;
+  }
+}
+#evo_place_container .evo-place .evo-place-big-title {
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 1280px) {
+  #evo_place_container .evo-place .evo-place-big-title {
+    font-size: 54px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #evo_place_container .evo-place .evo-place-big-title {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container .evo-place .evo-place-big-title {
+    font-size: 40px;
+    text-align: left;
+  }
+}
+#evo_place_container .evo-place .evo-place-minisections-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container .evo-place .evo-place-minisections-container {
+    flex-direction: column;
+  }
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection
+  .minisection-icon {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection
+    .minisection-icon {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #evo_place_container
+    .evo-place
+    .evo-place-minisections-container
+    .evo-place-minisection
+    .minisection-icon {
+    margin-right: 1rem;
+  }
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection
+  .minisection-icon
+  > img {
+  max-width: 32px;
+  max-height: 32px;
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection
+  .minisection-rest {
+  display: flex;
+  flex-direction: column;
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection
+  .minisection-rest
+  .minisection-title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection
+  .minisection-rest
+  .minisection-info-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 0.5rem;
+}
+#evo_place_container
+  .evo-place
+  .evo-place-minisections-container
+  .evo-place-minisection
+  .minisection-rest
+  .minisection-button
+  button {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+#atm_map_container {
+  background-color: #fff;
+  background-image: url(https://www.evobanco.com/.galleries/home/img-map_3x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+#atm_map_container .atm-map-container {
+  display: flex;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container {
+    flex-direction: column;
+  }
+}
+#atm_map_container .atm-map-container .atm-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  height: 400px;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map {
+    width: 50%;
+  }
+}
+#atm_map_container .atm-map-container .atm-map .atm-map-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+#atm_map_container .atm-map-container .atm-map .atm-map-big-title {
+  font-weight: 900;
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map .atm-map-big-title {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map .atm-map-big-title {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map .atm-map-big-title {
+    font-size: 30px;
+  }
+}
+#atm_map_container .atm-map-container .atm-map .atm-map-fature-list {
+  font-weight: 100;
+  text-transform: none;
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map .atm-map-fature-list {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map .atm-map-fature-list {
+    font-size: 16px;
+  }
+}
+#atm_map_container .atm-map-container .atm-map .atm-map-button > button {
+  font-size: 14px;
+  font-weight: 700;
+}
+#atm_map_container .atm-map-container .atm-map-markers {
+  display: flex;
+  flex-grow: 1;
+  color: #fff;
+  position: relative;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map-markers {
+    height: 300px;
+  }
+}
+#atm_map_container .atm-map-container .atm-map-markers [class^="map-marker-"] {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 56px;
+  height: 78px;
+  position: absolute;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container
+    .atm-map-container
+    .atm-map-markers
+    [class^="map-marker-"] {
+    width: 40px;
+    height: 54px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-1 {
+    left: 30%;
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-1 {
+    left: 20%;
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-1 {
+    left: 20%;
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-2 {
+    left: 95%;
+    top: 10%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-2 {
+    left: 90%;
+    top: 10%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-2 {
+    left: 5%;
+    top: 50%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-3 {
+    left: 70%;
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-3 {
+    left: 50%;
+    top: 40%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-3 {
+    left: 50%;
+    top: 70%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-4 {
+    left: 40%;
+    top: 60%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-4 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-5 {
+    left: 80%;
+    top: 80%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-5 {
+    left: 80%;
+    top: 80%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-marker-5 {
+    left: 70%;
+    top: 10%;
+  }
+}
+#atm_map_container .atm-map-container .atm-map-markers .map-position {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+@media only screen and (min-width: 1280px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-position {
+    left: 25%;
+    top: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-position {
+    left: 90%;
+    top: 40%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #atm_map_container .atm-map-container .atm-map-markers .map-position {
+    left: 50%;
+    top: 30%;
+  }
+}
+#atm_map_container .atm-map-container .atm-map-markers .map-position::after {
+  content: " ";
+  display: block;
+  width: 8px;
+  height: 8px;
+  left: 6px;
+  top: 6px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#customer_opinions_container .customer-opinions {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #000;
+}
+#customer_opinions_container .customer-opinions .customer-opinions-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #customer_opinions_container
+    .customer-opinions
+    .customer-opinion-cards-container {
+    flex-direction: column;
+  }
+}
+@-webkit-keyframes card1Animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@-moz-keyframes card1Animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@-o-keyframes card1Animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@keyframes card1Animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@-webkit-keyframes card1Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@-moz-keyframes card1Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@-o-keyframes card1Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+@keyframes card1Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 202.120646554;
+  }
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-1
+  .customer-opinion-radial-progress
+  circle {
+  stroke: #f4137b;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-1
+  .customer-opinion-radial-progress
+  circle.complete {
+  stroke-dashoffset: 202.120646554;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-1
+  .animated
+  .customer-opinion-radial-progress
+  circle.complete {
+  animation: card1Animation 2s 1;
+}
+@-webkit-keyframes card2Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 31.4473424624;
+  }
+}
+@-moz-keyframes card2Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 31.4473424624;
+  }
+}
+@-o-keyframes card2Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 31.4473424624;
+  }
+}
+@keyframes card2Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 31.4473424624;
+  }
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-2
+  .customer-opinion-radial-progress
+  circle {
+  stroke: #48dfba;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-2
+  .customer-opinion-radial-progress
+  circle.complete {
+  stroke-dashoffset: 31.4473424624;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-2
+  .animated
+  .customer-opinion-radial-progress
+  circle.complete {
+  animation: card2Animation 2s 1;
+}
+@-webkit-keyframes card3Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 74.3300821839;
+  }
+}
+@-moz-keyframes card3Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 74.3300821839;
+  }
+}
+@-o-keyframes card3Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 74.3300821839;
+  }
+}
+@keyframes card3Animation {
+  from {
+    stroke-dashoffset: 219.9114857513;
+  }
+  to {
+    stroke-dashoffset: 74.3300821839;
+  }
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-3
+  .customer-opinion-radial-progress
+  circle {
+  stroke: #ffb800;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-3
+  .customer-opinion-radial-progress
+  circle.complete {
+  stroke-dashoffset: 74.3300821839;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  .customer-opinion-card-3
+  .animated
+  .customer-opinion-radial-progress
+  circle.complete {
+  animation: card3Animation 2s 1;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #customer_opinions_container
+    .customer-opinions
+    .customer-opinion-cards-container
+    [class^="customer-opinion-card-"] {
+    width: 32%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  #customer_opinions_container
+    .customer-opinions
+    .customer-opinion-cards-container
+    [class^="customer-opinion-card-"] {
+    margin-bottom: 1rem;
+  }
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"]
+  .customer-opinion-radial-progress {
+  height: auto;
+  transform: rotate(-90deg);
+  max-width: 200px;
+  width: 100%;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"]
+  .customer-opinion-radial-progress
+  circle {
+  fill: transparent;
+  stroke-dashoffset: 219.9114857513;
+  stroke-width: 4px;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"]
+  .customer-opinion-radial-progress
+  circle.incomplete {
+  opacity: 0.25;
+  stroke: #cfcfcf;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"]
+  .customer-opinion-radial-progress
+  circle.complete {
+  stroke-dasharray: 219.9114857513;
+  stroke-linecap: round;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"]
+  .customer-opinion-radial-progress
+  .value-text {
+  fill: #000;
+  font-weight: 100;
+  text-anchor: middle;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-cards-container
+  [class^="customer-opinion-card-"]
+  .customer-opinion-text {
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+}
+#customer_opinions_container .customer-opinions .customer-opinion-disclaimer {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-remarks-container {
+  display: flex;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-remarks-container
+  .remarks-icon-container {
+  padding: 0.5rem 1rem 0 0;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-remarks-container
+  .remarks-icon-container
+  img {
+  max-width: 32px;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-remarks-container
+  .remarks-texts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-remarks-container
+  .remarks-texts-container
+  .remarks-title {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 0 0 1rem 0;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-remarks-container
+  .remarks-texts-container
+  .remarks-text {
+  font-size: 16px;
+}
+#customer_opinions_container
+  .customer-opinions
+  .customer-opinion-disclaimer-container {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.premium-section {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.premium-section .picture-premium {
+  padding: 36px 0;
+}
+.premium-section .picture-premium img {
+  display: inline;
+}
+.premium-section .title-premium {
+  font-family: Calibre;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .premium-section .title-premium {
+    font-size: 15px;
+  }
+  .premium-section .col-6 {
+    width: calc(50% - 2px);
+  }
+}
+
+@-webkit-keyframes slideMask {
+  0% {
+    mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -moz-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -o-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+  }
+  10% {
+    mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -moz-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -o-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+  }
+  20% {
+    mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -moz-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -webkit-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -o-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+  }
+  30% {
+    mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -moz-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -webkit-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -o-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+  }
+  40% {
+    mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -moz-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -o-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+  }
+  50% {
+    mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -moz-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -o-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+  }
+  60% {
+    mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -moz-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -webkit-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -o-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+  }
+  70% {
+    mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -moz-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -webkit-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -o-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+  }
+  80% {
+    mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -moz-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -webkit-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -o-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+  }
+  90% {
+    mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -moz-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -webkit-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -o-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+  }
+  100% {
+    mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -moz-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -webkit-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -o-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+  }
+}
+@-moz-keyframes slideMask {
+  0% {
+    mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -moz-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -o-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+  }
+  10% {
+    mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -moz-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -o-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+  }
+  20% {
+    mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -moz-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -webkit-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -o-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+  }
+  30% {
+    mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -moz-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -webkit-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -o-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+  }
+  40% {
+    mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -moz-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -o-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+  }
+  50% {
+    mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -moz-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -o-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+  }
+  60% {
+    mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -moz-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -webkit-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -o-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+  }
+  70% {
+    mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -moz-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -webkit-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -o-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+  }
+  80% {
+    mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -moz-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -webkit-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -o-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+  }
+  90% {
+    mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -moz-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -webkit-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -o-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+  }
+  100% {
+    mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -moz-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -webkit-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -o-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+  }
+}
+@-o-keyframes slideMask {
+  0% {
+    mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -moz-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -o-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+  }
+  10% {
+    mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -moz-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -o-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+  }
+  20% {
+    mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -moz-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -webkit-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -o-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+  }
+  30% {
+    mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -moz-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -webkit-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -o-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+  }
+  40% {
+    mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -moz-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -o-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+  }
+  50% {
+    mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -moz-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -o-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+  }
+  60% {
+    mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -moz-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -webkit-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -o-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+  }
+  70% {
+    mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -moz-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -webkit-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -o-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+  }
+  80% {
+    mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -moz-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -webkit-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -o-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+  }
+  90% {
+    mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -moz-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -webkit-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -o-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+  }
+  100% {
+    mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -moz-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -webkit-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -o-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+  }
+}
+@keyframes slideMask {
+  0% {
+    mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -moz-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+    -o-mask-image: linear-gradient(0, black 80%, rgba(0, 0, 0, 0) 100%);
+  }
+  10% {
+    mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -moz-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+    -o-mask-image: linear-gradient(0, black 72%, rgba(0, 0, 0, 0) 90%);
+  }
+  20% {
+    mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -moz-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -webkit-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+    -o-mask-image: linear-gradient(0, black 64%, rgba(0, 0, 0, 0) 80%);
+  }
+  30% {
+    mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -moz-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -webkit-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+    -o-mask-image: linear-gradient(0, black 56%, rgba(0, 0, 0, 0) 70%);
+  }
+  40% {
+    mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -moz-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+    -o-mask-image: linear-gradient(0, black 48%, rgba(0, 0, 0, 0) 60%);
+  }
+  50% {
+    mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -moz-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+    -o-mask-image: linear-gradient(0, black 40%, rgba(0, 0, 0, 0) 50%);
+  }
+  60% {
+    mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -moz-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -webkit-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+    -o-mask-image: linear-gradient(0, black 32%, rgba(0, 0, 0, 0) 40%);
+  }
+  70% {
+    mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -moz-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -webkit-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+    -o-mask-image: linear-gradient(0, black 24%, rgba(0, 0, 0, 0) 30%);
+  }
+  80% {
+    mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -moz-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -webkit-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+    -o-mask-image: linear-gradient(0, black 16%, rgba(0, 0, 0, 0) 20%);
+  }
+  90% {
+    mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -moz-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -webkit-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+    -o-mask-image: linear-gradient(0, black 8%, rgba(0, 0, 0, 0) 10%);
+  }
+  100% {
+    mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -moz-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -webkit-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+    -o-mask-image: linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%);
+  }
+}
+#main > p {
+  display: none;
+}
+
+.sticky-wrapper.is-sticky .m_header_main {
+  max-width: 1428px;
+}
+
+@media only screen and (min-width: 991px) {
+  .m_navigation_list .item:hover .m_submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .m_navigation_list .item:hover > span::before {
+    transform: rotate(-45deg);
+  }
+  .m_navigation_list .item:hover > span::after {
+    transform: rotate(45deg);
+  }
+  .m_navigation_list:hover + .nav_line {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mCustomScrollBox,
+.mCustomScrollbar {
+  -ms-touch-action: pan-y pinch-zoom;
+  touch-action: pan-y pinch-zoom;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+}
+.loader:not(.active) {
+  animation: slideIn 2s ease-out 1;
+}
+.loader.active {
+  opacity: 1;
+}
+.loader .gif-container {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.master_layout .row {
+  display: flex;
+  clear: none;
+}
+
+.font-size-74 {
+  font-size: 74px;
+}
+
+.font-size-60 {
+  font-size: 60px;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-46 {
+  font-size: 46px;
+}
+
+.bubble {
+  position: absolute;
+  right: -117px;
+  bottom: 10px;
+  width: 194px;
+  height: 171px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  animation: wave 1s ease-in-out infinite;
+      background-color: #009ebc;
+    border-radius: 50%;
+}
+.bubble:hover {
+  animation: 0;
+}
+
+.bubble-text {
+  position: absolute;
+  right: -115px;
+  bottom: 10px;
+  width: 194px;
+  height: 171px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  animation: wave 1s ease-in-out infinite;
+}
+
+@media only screen and (min-width: 0) and (max-width: 767.9px) {
+  .bubble {
+    display: none;
+  }
+  .bubble-text {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .bubble {
+    bottom: 0;
+    top: -35px;
+  }
+  .bubble-text {
+    bottom: 0;
+    top: -35px;
+  }
+}
+
+.bubble-text p {
+  width: 100% !important;
+}
+
+.bubble-text a {
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline white;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.96);
+  }
+}
+
+#account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table {
+  display: flex;
+  color: #000;
+  font-size: 11px;
+  line-height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000;
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table {
+    flex-direction: column;
+  }
+}
+#account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table .risk-score-table-cell {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table .risk-score-table-cell.cell-1 {
+    width: 33.33%;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table .risk-score-table-cell.cell-1 {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table .risk-score-table-cell.cell-2 {
+    width: 66.66%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table .risk-score-table-cell-separator {
+    border-left: 1px solid #000;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #account_mortgage_investment_container .account-mortgage-investment .right-content .risk-score-table-container > .risk-score-table .risk-score-table-cell-separator {
+    border-top: 1px solid #000;
+  }
+}

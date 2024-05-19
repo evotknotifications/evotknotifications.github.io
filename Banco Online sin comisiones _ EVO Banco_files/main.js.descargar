@@ -1,0 +1,396 @@
+(function ($, undefined) {
+
+
+  function isElementInViewport(elem) {
+    var $elem = $(elem);
+
+    // Get the scroll position of the page.
+
+    var viewportTop = window.scrollY;
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+  $.fn.animateOnViewPort = function(options){
+
+     var t = function(elem){
+      return function(evt){
+
+        if(!elem.length)
+         return;
+
+        if(document.readyState === 'complete' && isElementInViewport(elem)){
+           if(!options || !options.customAction){
+             $(elem).addClass(!options ? 'animated' : options.animationClass || 'animated');
+           }
+           else{
+             options.customAction.call(elem);
+           }
+          $(this).off(evt);
+        }
+      }
+    } ;
+    $(window).on('scroll', t(this));
+    return this;
+  }
+
+  $(window).load(function () {
+    setTimeout(buildCarousels, 0);
+
+    window.accountMortgageInvestmentSection = 'account';
+
+    window.previousWidth = $(window).width();
+
+    toggleComisionesPerpective();
+    toggleTarifaPerspective();
+    toggleMenuHeader();
+    $('.m_navigation_list .item.has_submenu li > a').on('click', function(evt){
+      evt.stopPropagation();
+    });
+
+    $('#valores-pages-loader').removeClass('active');
+    setTimeout(function(){
+      $('#valores-pages-loader').css('display','none');
+    },2000);
+    $('main.main_content').addClass('animated');
+  });
+
+  $('.v-accordion-item').on('click', function(){
+    if($(this).hasClass('active'))
+     return;
+   $(this).parent().find('.v-accordion-item').removeClass('active');
+   $(this).addClass('active');
+   window.scroll({
+    top: $(this).offset().top - 65,
+    left:0,
+    behavior: 'smooth'
+  });
+   $('.v-accordion-item').addClass('animate');
+  });
+
+  $('.show-more').on('click',function(){
+    $('.companies-container .row:last-child').toggleClass('active');
+   $(this).find('span').toggleClass('d-none');
+
+ if($('.companies-container > .active').length === 1)
+   window.scroll({
+    top: $(this).offset().top  - 200,
+    left:0,
+    behavior: 'smooth'
+  });
+
+
+  })
+
+  $(document).on('onAccountMortgageInvestmentChangeSection',function(evt,params){
+    window.accountMortgageInvestmentSection = params.section;
+  })
+  .on('changePerspective', function(){
+    toggleComisionesPerpective();
+    toggleCarousel();
+  })
+  .on('changePerspectiveTablet', function(){
+    toggleComisionesPerpective();
+    toggleTarifaPerspective();
+  })
+  .on('changePerspectiveMobile', function(){
+    toggleMenuHeader();
+  });
+
+
+
+  function buildCarousels(){
+    constructCarousel('.products-carousel-container');
+    constructCarousel('.services-carousel-container', { sideMargin: 0 });
+    constructCarousel('.novelties-carousel-container',{sideMargin: 135});
+    constructCarousel('.payment-methods-carousel-container');
+    constructCarousel('.v-questions-carousel', { sideMargin: 20 });
+  }
+
+  function toggleCarousel(){
+    destructCarousel('.products-carousel-container');
+    destructCarousel('.services-carousel-container');
+    destructCarousel('.novelties-carousel-container');
+    destructCarousel('.payment-methods-carousel-container');
+    destructCarousel('.v-questions-carousel');
+    buildCarousels();
+  }
+
+
+  $(window).on('resize',function(){
+      currWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if((window.previousWidth >= 768 && currWidth < 768) || (window.previousWidth < 768 && currWidth >= 768)){
+        $(document).trigger('changePerspective');
+      }
+
+      if((window.previousWidth >= 1280 && currWidth < 1280) || (window.previousWidth < 1280 && currWidth >= 1280)){
+        $(document).trigger('changePerspectiveTablet');
+      }
+ 
+      if((window.previousWidth > 990 && currWidth <= 990) || (window.previousWidth <= 990 && currWidth > 990)){
+        $(document).trigger('changePerspectiveMobile');
+      }
+      window.previousWidth = currWidth;
+
+  });
+
+
+  function constructCarousel(selector, options) {
+    options = Object.assign({ sideMargin: 14 }, options);
+    var $container = $(selector);
+    if($container.index() === -1)
+     return;
+    itemWidth = (options.itemWidth || $('.custom-carousel-item', $container).innerWidth()) + options.sideMargin;
+
+     $container.mCustomScrollbar({
+      axis: 'x',
+      theme: 'dark',
+      autoDraggerLength: false,
+      autoExpandScrollbar: true,
+      scrollbarPosition: 'outside',
+      scrollInertia: 333,
+      scrollButtons: { enable: true, scrollAmount: itemWidth, scrollType: 'stepped' },
+      snapAmount: itemWidth,
+      advanced: { autoExpandHorizontalScroll: true },
+      mouseWheel: { enable: false },
+      contentTouchScroll: true,
+      documentTouchScroll: false,
+      callbacks: {
+        onScroll: function () {
+          scrollPercent = this.mcs.leftPct;
+        }
+      }
+    });
+
+    $('.mCSB_buttonLeft', $container).wrap("<div class='mCSB_buttonWrapper mCSB_buttonWrapperLeft'></div>").html('<i class="fas fa-angle-left"></i>');
+    $('.mCSB_buttonRight', $container).wrap("<div class='mCSB_buttonWrapper mCSB_buttonWrapperRight'></div>").html('<i class="fas fa-angle-right"></i>');
+    $('.mCSB_buttonWrapperLeft', $container).on('touchend', function (ev) {
+      $('.mCSB_buttonLeft', $container).trigger('click');
+    });
+    $('.mCSB_buttonWrapperRight', $container).on('touchend', function (ev) {
+      $('.mCSB_buttonRight', $container).trigger('click');
+    });
+
+    $container.mCustomScrollbar('update');
+  }
+
+  function destructCarousel(selector){
+    var $container = $(selector);
+    if($container.index() === -1)
+     return;
+    $container.mCustomScrollbar('destroy');
+  }
+
+  function toggleComisionesPerpective(){
+    destructCarousel('.comisiones-carousel-container');
+    var width = $(window).width();
+    if(  width < 1280){
+         constructCarousel('.comisiones-carousel-container', width < 768 ? {itemWidth:600}: undefined );
+     }
+  }
+
+  function toggleTarifaPerspective(){
+      if($(window).width() < 1280){
+        for(var i=1; i < 5 ; i++)
+         constructCarousel('.tarifa-carousel-container-'+ i.toString());
+         return;
+      }
+      for(var i=1; i < 5 ; i++)
+      destructCarousel('.tarifa-carousel-container-' + i.toString());
+  }
+
+  function toggleMenuHeader(){
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+    if(width < 990){
+
+      var html = $('.m_navigation_list').html();
+       var linkInicio = '<li class="item" id="home_link"><a href="https://www.evobanco.com">Inicio</a></li>';
+       $('.m_navigation_list').html(linkInicio + html);
+
+       $('.m_navigation_list .item.has_submenu').on('click', function(evt){
+         if($(this).hasClass('is_active')){
+           $(this).removeClass('is_active');
+           return;
+         }
+         $('.m_navigation_list .item.has_submenu').removeClass('is_active');
+         $(this).addClass('is_active');
+         evt.stopImmediatePropagation();
+       });
+
+     }
+     else{
+      $('.m_navigation_list .item.has_submenu').off('click').removeClass('is_active');
+      $('#home_link').remove();
+     }
+
+
+     $('.m_navigation_list a').on('click',function(evt){
+      evt.stopImmediatePropagation();
+    })
+  }
+
+
+  function showAccountMortgageInvestmentAccordion() {
+    function onBeforeActivate(ev, ui) {
+      section = $.grep(['account', 'mortgage', 'investment'],function( c) {
+        return ui.newHeader.hasClass(c+ '-accordion-header');
+      })[0];
+
+      var sectionClass = section + '-content';
+      var $section = $('#account_mortgage_investment_container_mobile');
+      $section.removeClass('account-content mortgage-content investment-content').addClass(sectionClass);
+
+      $(document).trigger('onAccountMortgageInvestmentChangeSection',{section:section});
+    }
+    try{
+      $('.account-mortgage-investment-accordion').accordion('option');
+      index = 0;
+      switch(window.accountMortgageInvestmentSection){
+        case 'mortgage': index = 1;
+         break;
+        case 'investment' : index = 2;
+        break;
+      }
+       $('.account-mortgage-investment-accordion').accordion({active: index});
+    }
+    catch(e){
+      $('.account-mortgage-investment-accordion').accordion({
+        header: 'h3',
+        heightStyle: 'fill',
+        animate: { easing: 'swing', duration: 333 },
+        beforeActivate: onBeforeActivate
+      });
+    }
+  }
+
+  function hideAccountMortgageInvestmentAccordion(){
+    window.loadAccountMortgageInvestmentOption(window.accountMortgageInvestmentSection);
+
+  }
+
+  window.loadAccountMortgageInvestmentOption = function (type,animated) {
+    var $section = $('#account_mortgage_investment_container');
+    $section.removeClass('account-content mortgage-content investment-content')
+            .addClass(type + '-content');
+
+  $background =  $('#account_mortgage_investment_container .background')
+                               .removeClass('account mortgage investment animated')
+                               .addClass(type);
+  $before = $('.left-option-group .option.active');
+  $('.left-option-group .option', $section).removeClass('active');
+  var $option =  $('.left-option-group .option.' + type + '-option', $section)
+                 .addClass('active');
+   $before.removeClass('animate__animated  amiFadeInUp ami-animate-do-delay-1 ami-animate-do-delay-2').addClass('option-animated');
+   $option.removeClass('animate__animated  amiFadeInUp ami-animate-do-delay-1 ami-animate-do-delay-2').addClass('option-animated');
+
+
+    $('.right-content', $section).hide();
+    $('.right-content.' + type + '-content', $section)
+      .css('display', 'flex')
+      .hide()
+      .fadeIn(50,function(){
+      $background.addClass('animated');
+      });
+
+    $(document).trigger('onAccountMortgageInvestmentChangeSection',{section: type});
+  };
+
+  var accessCount = parseInt(localStorage.getItem('access-count') || '0') ;
+ if(accessCount === 25){
+  window.loadAccountMortgageInvestmentOption('investment',true);
+}
+else if(accessCount > 4)
+  window.loadAccountMortgageInvestmentOption('mortgage',true);
+
+accessCount = (accessCount + 1)%10;
+
+localStorage.setItem('access-count',accessCount.toString());
+
+
+  window.loadMoreServicesOption = function (type) {
+    var $section = $('#more_services_container');
+
+    var classForRemove = 'amiFadeInUp ami-animate-delay-1 ami-animate-delay-2 ami-animate-delay-3 ami-animate-delay-4'
+
+    $('.active', $section).removeClass('active').removeClass(classForRemove);
+    $('.' + type , $section).addClass('active').removeClass(classForRemove);
+  };
+
+  $('#more_services_container').animateOnViewPort({
+     customAction: function(){
+       var $section = $(this);
+       $('.animate__animated',$section).addClass('amiFadeInUp');
+       $('.image-container',$section).addClass('animated');
+      }
+    })
+
+    $('#atm_map_container').animateOnViewPort({
+      customAction: function(){
+      var $section = $(this);
+      $('[class^=map-marker]',$section).addClass('animate__zoomIn');
+    }
+  })
+
+
+   $.each([8.09,85.7,66.2],function(i,v) {
+
+       htmlSvg = '<svg class="customer-opinion-radial-progress" viewBox="0 0 96 96">'+
+       '<circle class="incomplete" cx="48" cy="48" r="35" ></circle>'+
+       '<circle class="complete" cx="48" cy="48" r="35" ></circle>'+
+       '<text class="value-text" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 96, 0)">'+v+'%</text>'+
+     '</svg>';
+
+      $('#svg-card-'+ (i+1)).html(htmlSvg).animateOnViewPort();
+  });
+
+    //ANIMATION MAP FOOTER IMGS - [2022-03-22 IPGLOBAL]
+    var allowedHostnameAlertModalHome = ['www.evobanco.com'];
+    var allowedPathnameUrlsAlertModalHome = [
+            {'url':'/'  },
+            {'url':'/clientes/' } 
+    ];
+
+    if (allowedHostnameAlertModalHome.indexOf(document.location.hostname) !== -1) {
+        for (var i=0; i<allowedPathnameUrlsAlertModalHome.length; i++) {
+            if (allowedPathnameUrlsAlertModalHome[i].url == document.location.pathname) {          
+
+            try{
+                //Check if map is visible
+                var intAnimetedMap = false;        
+                var observer = new IntersectionObserver(function(entries) {                    
+                        if(entries[0]['isIntersecting'] === true) {
+                            if(entries[0]['intersectionRatio'] === 1)
+                                if(!intAnimetedMap){
+                                    intAnimetedMap = true;
+                                    console.log('Target map-marker is fully visible in screen');
+                                    //Start simple animation with fadeIn/fadeOut - if map is visible
+                                    setTimeout(function() {
+                                        $('.map-marker-3').find('img').fadeOut(1000, function() {
+                                            $('.map-marker-3').find('img').attr("src",'https://www.evobanco.com/.galleries/home/logo-evo-gris.svg');
+                                        }).fadeIn(1000);                                    
+                                    }, 2000);                
+                                    setTimeout(function() {
+                                        $('.map-marker-3').find('img').fadeOut(1000, function() {
+                                            $('.map-marker-3').css( "width", "auto");
+                                            $('.map-marker-3').find('img').attr("src",'https://www.evobanco.com/.galleries/home/direccion-oficina.svg');
+                                        }).fadeIn(1000);                                    
+                                    }, 3500);                              
+                                }                      
+                        }
+                    }, { threshold: [0, 0.5, 1] });
+               
+                observer.observe(document.querySelector(".atm-map-markers"));  
+            }catch(exception){                
+                console.log(exception);          
+            }
+            break;
+            }
+        }
+    }
+ 
+})($jQuery2);

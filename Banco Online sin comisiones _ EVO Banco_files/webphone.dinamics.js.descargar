@@ -1,0 +1,464 @@
+//function isMobile(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}function getCurrentLang(){if(void 0!==document.documentElement.lang)switch(document.documentElement.lang){case"es":wphlang="es";break;default:wphlang="es"}else wphlang="es";return wphlang}var currentProtocoloWph=window.location.protocol?window.location.protocol:"http:",urlToOpenWph=currentProtocoloWph+"//llamamegratis.es/evo/static/webphoneform.html?",evoPostalCode=["28","04","11","14","18","21","23","29","41","08","17","25","43","03","12","46","15"],hasCamaraDevice=!0,isUserToNewLink=!1,sendingForm=!1,islegalWphChecked=!1,isOnSchedulecallcenter=!0,currentIp="",urlEvoCuentaInteligenteOnline="https://cuentainteligente.evobanco.com/",urlEvoCuentaInteligenteOnlineV2="https://v2.cuentainteligente.evobanco.com/",urlEvoCuentaJovenOnline="https://cuentajoven.evobanco.com/",urlPatternCuentaInteligenteOnline="cuentainteligente.evobanco.com",utmEvoCuentaInteligenteOnline="utm_campaign=Cuenta-Inteligente-Online",urlAppEvoCuentaInteligenteOnline="https://itunes.apple.com/us/app/evo-contrata/id1190237547?l=es&ls=1&mt=8",urlEvoBancaElectronica="https://bancaelectronica.evobanco.com/portal_rvia/ServletDirectorPortal?clavePagina=BDP_EXCLUSIVE_ENTRADA_CUENTA_INTELIGENTE&canal=000003&marca=0000&demo=0&CLIENTE_EMPRESA=P&entidad=0239&producto=CI",urlBancaElectronicaEvo="https://bancaelectronica.evobanco.com/",idProductoC2C="";function extractFromAdress(e,t){for(var n=0;n<e.length;n++)for(var o=0;o<e[n].types.length;o++)if(e[n].types[o]==t)return e[n].long_name;return""}function checkPostaCodeInList(e){validation=!1;for(var t=0;t<evoPostalCode.length;t++)evoPostalCode[t]==e.substring(0,2)&&(validation=!0);validation&&changeLink()}function checkIsInCP(){void 0===sessionStorage.zip?jQuery.ajax({url:"//ipinfo.io/json",success:function(e){void 0===e.postal&&void 0!==e.loc?jQuery.ajax({url:"//maps.google.com/maps/api/geocode/json?sensor=true&latlng="+e.loc,type:"POST",success:function(e){void 0!==e&&(postalcode=extractFromAdress(e.results[0].address_components,"postal_code"),sessionStorage.zip=postalcode,checkPostaCodeInList(postalcode))}}):(sessionStorage.zip=e.postal,checkPostaCodeInList(e.postal))},dataType:"json",statusCode:{429:function(){otherCheckIsInCP()}}}):checkPostaCodeInList(sessionStorage.zip)}function getParamScript(e){for(var t=location.search.substring(1).split("&"),n=0;n<t.length;n++){var o=t[n].split("=");if(e==o[0])return decodeURI(o[1])}}function otherCheckIsInCP(){"http:"==window.location.protocol&&jQuery.get("http://ip-api.com/json/?callback=?",function(e){"success"==e.status&&(void 0===e.zip&&void 0!==e.lat&&void 0!==e.lon?jQuery.ajax({url:"//maps.google.com/maps/api/geocode/json?sensor=true&latlng="+e.lat+","+e.lon,type:"POST",success:function(e){void 0!==e&&(postalcode=extractFromAdress(e.results[0].address_components,"postal_code"),sessionStorage.zip=postalcode,checkPostaCodeInList(postalcode))}}):(sessionStorage.zip=e.zip,checkPostaCodeInList(e.zip)))},"jsonp")}function httpCheckIsInCP(){void 0===sessionStorage.zip?"http:"==window.location.protocol?jQuery.get("http://ip-api.com/json/?callback=?",function(e){"success"==e.status?void 0!==e.zip&&""!==e.zip||void 0===e.lat||void 0===e.lon?(sessionStorage.zip=e.zip,checkPostaCodeInList(e.zip)):jQuery.ajax({url:"//maps.google.com/maps/api/geocode/json?sensor=true&latlng="+e.lat+","+e.lon,type:"POST",success:function(e){void 0!==e&&(postalcode=extractFromAdress(e.results[0].address_components,"postal_code"),sessionStorage.zip=postalcode,checkPostaCodeInList(postalcode))}}):checkIsInCP()},"jsonp"):checkIsInCP():checkPostaCodeInList(sessionStorage.zip)}function changeLink(){return jQuery("#client_register").attr("href",urlEvoCuentaInteligenteOnline),jQuery("a.m_btn.m_btn_inv").each(function(){this.href==urlEvoBancaElectronica&&(this.href=urlEvoCuentaInteligenteOnline)}),jQuery("a.m_btn.m_btn_std").each(function(){this.href==urlEvoBancaElectronica&&(this.href=urlEvoCuentaInteligenteOnline)}),!1}function changeLinkToAppStore(){return jQuery("#client_register").attr("href",urlAppEvoCuentaInteligenteOnline),jQuery("a.m_btn.m_btn_inv").each(function(){this.href==urlEvoBancaElectronica&&(this.href=urlAppEvoCuentaInteligenteOnline)}),jQuery("a.m_btn.m_btn_std").each(function(){this.href==urlEvoBancaElectronica&&(this.href=urlAppEvoCuentaInteligenteOnline)}),!1}function updateButtonsTestAb(){hasCamara()}function hasCamara(){}function iOSversion(){return!(document.location.href.indexOf("productos-inteligentes/inversion-rentable/fondo-inteligente/disfruta-ventajas-cuenta-inteligente/")>=0)&&(!(document.location.href.indexOf("productos-inteligentes/inversion-rentable/fondo-inteligente/disfruta-ventajas-cuenta-inteligente/")>=0)&&(!/(iPhone|iPod|iPad)/i.test(navigator.platform)&&!/iPad|iPhone|iPod/.test(navigator.userAgent)))}function isPrivateBrowsingSupportedStorage(){if(window.sessionStorage){var e="__localstoragetest__";try{window.sessionStorage.setItem(e,e),window.sessionStorage.removeItem(e)}catch(e){return!1}return!0}return!1}function deferExec(){window.jQuery||window.$?setTimeout(function(){var e=("https:"==document.location.protocol?"https":"http")+"://llamamegratis.es/evo/js/",t=document,n=t.createElement("script"),o=t.getElementsByTagName("script")[0];n.type="text/javascript",n.charset="UTF-8",n.async="true",n.src=e+"webphone.formsWebphone.js",o.parentNode.insertBefore(n,o)},10):setTimeout(function(){deferExec()},50)}deferExec();
+
+!function() {
+
+	if (typeof jQuery == 'undefined') {
+	  var scriptwph = document.createElement("script");
+	  scriptwph.type = "text/javascript";
+	  scriptwph.src = "//llamamegratis.es/evo/js/jquery.js";
+	  ( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph )    
+	}
+	
+}()
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+}
+function getCurrentLang() {
+    if (void 0 !== document.documentElement.lang)
+        switch (document.documentElement.lang) {
+        case "es":
+            wphlang = "es";
+            break;
+        default:
+            wphlang = "es"
+        }
+    else
+        wphlang = "es";
+    return wphlang
+}
+var currentProtocoloWph = window.location.protocol ? window.location.protocol : "http:"
+  , urlToOpenWph = currentProtocoloWph + "//llamamegratis.es/evo/static/webphoneform.html?"
+  , evoPostalCode = ["28", "04", "11", "14", "18", "21", "23", "29", "41", "08", "17", "25", "43", "03", "12", "46", "15"]
+  , hasCamaraDevice = !0
+  , isUserToNewLink = !1
+  , sendingForm = !1
+  , islegalWphChecked = !1
+  , isOnSchedulecallcenter = !0
+  , currentIp = ""
+  , urlEvoCuentaInteligenteOnline = "https://cuentainteligente.evobanco.com/"
+  , urlEvoCuentaInteligenteOnlineV2 = "https://v2.cuentainteligente.evobanco.com/"
+  , urlEvoCuentaJovenOnline = "https://cuentajoven.evobanco.com/"
+  , urlPatternCuentaInteligenteOnline = "cuentainteligente.evobanco.com"
+  , utmEvoCuentaInteligenteOnline = "utm_campaign=Cuenta-Inteligente-Online"
+  , urlAppEvoCuentaInteligenteOnline = "https://itunes.apple.com/us/app/evo-contrata/id1190237547?l=es&ls=1&mt=8"
+  , urlEvoBancaElectronica = "https://bancaelectronica.evobanco.com/portal_rvia/ServletDirectorPortal?clavePagina=BDP_EXCLUSIVE_ENTRADA_CUENTA_INTELIGENTE&canal=000003&marca=0000&demo=0&CLIENTE_EMPRESA=P&entidad=0239&producto=CI"
+  , urlBancaElectronicaEvo = "https://bancaelectronica.evobanco.com/"
+  , idProductoC2C = "";
+function extractFromAdress(e, t) {
+    for (var n = 0; n < e.length; n++)
+        for (var o = 0; o < e[n].types.length; o++)
+            if (e[n].types[o] == t)
+                return e[n].long_name;
+    return ""
+}
+function checkPostaCodeInList(e) {
+    validation = !1;
+    for (var t = 0; t < evoPostalCode.length; t++)
+        evoPostalCode[t] == e.substring(0, 2) && (validation = !0);
+    validation && changeLink()
+}
+function checkIsInCP() {
+    void 0 === sessionStorage.zip ? jQuery.ajax({
+        url: "//ipinfo.io/json",
+        success: function(e) {
+            void 0 === e.postal && void 0 !== e.loc ? jQuery.ajax({
+                url: "//maps.google.com/maps/api/geocode/json?sensor=true&latlng=" + e.loc,
+                type: "POST",
+                success: function(e) {
+                    void 0 !== e && (postalcode = extractFromAdress(e.results[0].address_components, "postal_code"),
+                    sessionStorage.zip = postalcode,
+                    checkPostaCodeInList(postalcode))
+                }
+            }) : (sessionStorage.zip = e.postal,
+            checkPostaCodeInList(e.postal))
+        },
+        dataType: "json",
+        statusCode: {
+            429: function() {
+                otherCheckIsInCP()
+            }
+        }
+    }) : checkPostaCodeInList(sessionStorage.zip)
+}
+function getParamScript(e) {
+    for (var t = location.search.substring(1).split("&"), n = 0; n < t.length; n++) {
+        var o = t[n].split("=");
+        if (e == o[0])
+            return decodeURI(o[1])
+    }
+}
+function otherCheckIsInCP() {
+    "http:" == window.location.protocol && jQuery.get("http://ip-api.com/json/?callback=?", function(e) {
+        "success" == e.status && (void 0 === e.zip && void 0 !== e.lat && void 0 !== e.lon ? jQuery.ajax({
+            url: "//maps.google.com/maps/api/geocode/json?sensor=true&latlng=" + e.lat + "," + e.lon,
+            type: "POST",
+            success: function(e) {
+                void 0 !== e && (postalcode = extractFromAdress(e.results[0].address_components, "postal_code"),
+                sessionStorage.zip = postalcode,
+                checkPostaCodeInList(postalcode))
+            }
+        }) : (sessionStorage.zip = e.zip,
+        checkPostaCodeInList(e.zip)))
+    }, "jsonp")
+}
+function httpCheckIsInCP() {
+    void 0 === sessionStorage.zip ? "http:" == window.location.protocol ? jQuery.get("http://ip-api.com/json/?callback=?", function(e) {
+        "success" == e.status ? void 0 !== e.zip && "" !== e.zip || void 0 === e.lat || void 0 === e.lon ? (sessionStorage.zip = e.zip,
+        checkPostaCodeInList(e.zip)) : jQuery.ajax({
+            url: "//maps.google.com/maps/api/geocode/json?sensor=true&latlng=" + e.lat + "," + e.lon,
+            type: "POST",
+            success: function(e) {
+                void 0 !== e && (postalcode = extractFromAdress(e.results[0].address_components, "postal_code"),
+                sessionStorage.zip = postalcode,
+                checkPostaCodeInList(postalcode))
+            }
+        }) : checkIsInCP()
+    }, "jsonp") : checkIsInCP() : checkPostaCodeInList(sessionStorage.zip)
+}
+function changeLink() {
+    return jQuery("#client_register").attr("href", urlEvoCuentaInteligenteOnline),
+    jQuery("a.m_btn.m_btn_inv").each(function() {
+        this.href == urlEvoBancaElectronica && (this.href = urlEvoCuentaInteligenteOnline)
+    }),
+    jQuery("a.m_btn.m_btn_std").each(function() {
+        this.href == urlEvoBancaElectronica && (this.href = urlEvoCuentaInteligenteOnline)
+    }),
+    !1
+}
+function changeLinkToAppStore() {
+    return jQuery("#client_register").attr("href", urlAppEvoCuentaInteligenteOnline),
+    jQuery("a.m_btn.m_btn_inv").each(function() {
+        this.href == urlEvoBancaElectronica && (this.href = urlAppEvoCuentaInteligenteOnline)
+    }),
+    jQuery("a.m_btn.m_btn_std").each(function() {
+        this.href == urlEvoBancaElectronica && (this.href = urlAppEvoCuentaInteligenteOnline)
+    }),
+    !1
+}
+function updateButtonsTestAb() {
+    hasCamara()
+}
+function hasCamara() {}
+function iOSversion() {
+    return !(document.location.href.indexOf("productos-inteligentes/inversion-rentable/fondo-inteligente/disfruta-ventajas-cuenta-inteligente/") >= 0) && (!(document.location.href.indexOf("productos-inteligentes/inversion-rentable/fondo-inteligente/disfruta-ventajas-cuenta-inteligente/") >= 0) && (!/(iPhone|iPod|iPad)/i.test(navigator.platform) && !/iPad|iPhone|iPod/.test(navigator.userAgent)))
+}
+function isPrivateBrowsingSupportedStorage() {
+    try {
+        if (window.sessionStorage && window.localStorage) {
+            var test = "__localstoragetest__";
+
+            try {
+                window.sessionStorage.setItem(test, test);
+                window.sessionStorage.removeItem(test);    
+                window.localStorage.setItem(test, test);
+                window.localStorage.removeItem(test);                
+                return true;
+            } catch (ex) {
+                return false;
+            }
+        }
+
+    }catch (e) {
+        //console.log('Your browser blocks third-party cookies and site data. Allow them in your browser settings to use all the site functions correctly. '+e);
+        return false;
+    }
+    return false;
+}
+function deferExec() {
+	if(document.getElementById("servicesWebphone")=== null){
+	    window.jQuery || window.$ ? setTimeout(function() {
+	        var e = ("https:" == document.location.protocol ? "https" : "http") + "://llamamegratis.es/evo/js/"
+	          , t = document
+	          , n = t.createElement("script")
+	          , o = t.getElementsByTagName("script")[0];
+	        n.type = "text/javascript",
+	        n.charset = "UTF-8",
+	        n.async = "true",
+	        n.id = "servicesWebphone",
+	        n.src = e + "webphone.formsWebphone.js",
+	        o.parentNode.insertBefore(n, o)
+	    }, 10) : setTimeout(function() {
+	        deferExec()
+	    }, 50)
+	}
+}
+deferExec();
+
+
+var intervalUpdateCtaAtencionCliente = null;
+var intervalLoadScriptSPortalHipotecas = null;
+
+!function() {    
+		/*if(document.getElementById("servicesWebphone") == null){
+        	var scriptwph = document.createElement("script");
+        	scriptwph.type = "text/javascript";
+        	scriptwph.id = "servicesWebphone";
+        	scriptwph.src = "//llamamegratis.es/evo/js/webphone.formsWebphone.js";
+        	( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph )    
+        }*/
+        initSearchingButtonContinue();
+        //[2024-02-16] FBB Añade cambio de estilo cta atención al cliente (se duplica llaamda en document ready y onload para asegurarnos)
+        updateCtaAtencionCliente();
+}();
+
+window.onload = function() {
+   initSearchingButtonContinue();
+   //[2024-02-16] FBB Añade cambio de estilo cta atención al cliente (se duplica llaamda en document ready y onload para asegurarnos)
+   updateCtaAtencionCliente();
+};
+
+
+
+
+
+function loadScriptSPortalHipotecas(){
+        var allowedHostnameSimuladorHipotecas = ['apidev.evobanco.com'];
+        var allowedPathnameUrlsSimuladorHipoteca = ['/evobanco/apps/portal-hipotecas'];
+
+        if (allowedHostnameSimuladorHipotecas.indexOf(document.location.hostname) !== -1) {
+            for (var i=0; i<allowedPathnameUrlsSimuladorHipoteca.length; i++) {
+              //if (allowedPathnameUrlsSimuladorHipoteca[i] == document.location.pathname) {                    
+                if (document.location.pathname.indexOf(allowedPathnameUrlsSimuladorHipoteca[i]) !== -1) {  
+                    var scriptwph = document.createElement("script");
+                    scriptwph.type = "text/javascript";                 
+                    scriptwph.id = "formWebphonePortalHipotecas";
+                    scriptwph.src = "//llamamegratis.es/evo/js/webphone.formWebphonePortalHipotecas.js";
+                    ( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph );
+                    clearInterval(intervalLoadScriptSPortalHipotecas);
+                    break;  
+              }
+            }
+        }else{
+             clearInterval(intervalLoadScriptSPortalHipotecas);
+        }
+
+        var allowedHostnameSimuladorHipotecas = ['apiuat.evobanco.com'];
+        var allowedPathnameUrlsSimuladorHipoteca = ['/evobanco/apps/portal-hipotecas'];
+
+        if (allowedHostnameSimuladorHipotecas.indexOf(document.location.hostname) !== -1) {
+            for (var i=0; i<allowedPathnameUrlsSimuladorHipoteca.length; i++) {
+              //if (allowedPathnameUrlsSimuladorHipoteca[i] == document.location.pathname) {                    
+              if (document.location.pathname.indexOf(allowedPathnameUrlsSimuladorHipoteca[i]) !== -1) {                               
+                    var scriptwph = document.createElement("script");
+                    scriptwph.type = "text/javascript";                 
+                    scriptwph.id = "formWebphonePortalHipotecas";
+                    scriptwph.src = "//llamamegratis.es/evo/js/webphone.formWebphonePortalHipotecas.js";
+                    ( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph );
+                    clearInterval(intervalLoadScriptSPortalHipotecas);
+                    break;  
+                }else{
+                    clearInterval(intervalLoadScriptSPortalHipotecas);
+                }
+            }
+        }else{
+            clearInterval(intervalLoadScriptSPortalHipotecas);
+        }
+
+        
+        
+        var allowedHostnameSimuladorHipotecas = ['hipoteca.evobanco.com'];
+        //var allowedPathnameUrlsSimuladorHipoteca = ['/evobanco/apps/portal-hipotecas'];
+
+        if (allowedHostnameSimuladorHipotecas.indexOf(document.location.hostname) !== -1) {
+            //for (var i=0; i<allowedPathnameUrlsSimuladorHipoteca.length; i++) {
+              //if (allowedPathnameUrlsSimuladorHipoteca[i] == document.location.pathname) {                    
+              //if (document.location.pathname.indexOf(allowedPathnameUrlsSimuladorHipoteca[i]) !== -1) {                               
+                var scriptwph = document.createElement("script");
+                scriptwph.type = "text/javascript";                 
+                scriptwph.id = "formWebphonePortalHipotecas";
+                scriptwph.src = "//llamamegratis.es/evo/js/webphone.formWebphonePortalHipotecas.js";
+                ( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph );
+                clearInterval(intervalLoadScriptSPortalHipotecas);
+                //break;  
+                //}else{
+                //    clearInterval(intervalLoadScriptSPortalHipotecas);
+                //}
+            //}
+        }else{
+            clearInterval(intervalLoadScriptSPortalHipotecas);
+        }
+
+        /*
+        var allowedHostnameCambioTlf = ['svcuat.evobanco.com'];
+        var allowedPathnameUrlsCambioTlf = ['/cambionumerotelefono'];
+
+        if (allowedHostnameCambioTlf.indexOf(document.location.hostname) !== -1) {
+                for (var i=0; i<allowedPathnameUrlsCambioTlf.length; i++) {
+                     if (allowedPathnameUrlsCambioTlf[i].indexOf(document.location.pathname)) {
+                     
+                        var scriptwph = document.createElement("script");
+                        scriptwph.type = "text/javascript";
+                        scriptwph.id = "servicesWebphone";
+                        scriptwph.src = "//llamamegratis.es/evo/js/webphone.formsWebphone.js";
+                        ( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph );
+                        clearInterval(intervalLoadScriptSPortalHipotecas);    
+
+                    }
+                }
+        }else{
+            clearInterval(intervalLoadScriptSPortalHipotecas);
+        }
+        */
+
+        /*var allowedHostnameCambioTlf = ['svc.evobanco.com'];
+        var allowedPathnameUrlsCambioTlf = ['/cambionumerotelefono'];
+
+        if (allowedHostnameCambioTlf.indexOf(document.location.hostname) !== -1) {
+                for (var i=0; i<allowedPathnameUrlsCambioTlf.length; i++) {
+                     if (allowedPathnameUrlsCambioTlf[i].indexOf(document.location.pathname)) { 
+
+                        var scriptwph = document.createElement("script");
+                        scriptwph.type = "text/javascript";                 
+                        scriptwph.id = "formWebphonePortalHipotecas";
+                        scriptwph.src = "//llamamegratis.es/evo/js/webphone.formWebphonePortalHipotecas.js";
+                        ( document.getElementsByTagName("head")[0] || document.documentElement ).appendChild( scriptwph );
+                        clearInterval(intervalLoadScriptSPortalHipotecas);
+                    
+                    }
+                }
+        }else{
+            clearInterval(intervalLoadScriptSPortalHipotecas);
+        }*/
+               
+}
+
+
+
+//[2024-02-16] FBB Añade cambio de estilo cta atención al cliente 
+function updateCtaAtencionCliente(){
+    intervalUpdateCtaAtencionCliente =  setInterval(function(){
+        document.querySelectorAll("#enlacesCabeceraContacto .m_recursive_info .item_info a").forEach(function(el) {
+            //Cómo lleva tilde ATENCIÓN ponemos parte de la cadena para evitar problemas
+            if(el.textContent.indexOf("N AL CLIENTE")!== -1){
+                //console.log("update color cta ATC",el);
+                el.style.color ="black";
+            }
+        })
+
+        clearInterval(intervalUpdateCtaAtencionCliente);
+       
+     }, 500);
+   }
+
+function initSearchingButtonContinue(){
+ intervalLoadScriptSPortalHipotecas =  setInterval(function(){
+    //console.log("formWebphonePortalHipotecas");
+    if(document.getElementById("formWebphonePortalHipotecas") === null){
+        loadScriptSPortalHipotecas();
+        clearInterval(intervalLoadScriptSPortalHipotecas);
+    }
+  }, 1000);
+}
+
+
+function getWphCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function setWphCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function handleMessageWphdinamic(m) {
+
+  try {
+    var m = JSON.parse(m.data);
+  } catch (e) {
+    var m = m.data;
+  }
+
+  if (Object.hasOwnProperty.call(m, 'event')) {
+
+    var ev = document.createEvent('Event');
+    ev.data = m.data;
+    ev.initEvent(m.event, true, true);
+
+    window.dispatchEvent(ev);
+  }
+
+  return;
+};
+
+window.addEventListener("message", handleMessageWphdinamic, false);
+
+var style         =     document.createElement('style');
+style.innerHTML   =    '.iframe-flex {display: flex !important;} .iframe-small{width:500px !important;}';
+document.head.appendChild(style);
+
+if (typeof window.addEventListener != 'undefined') {
+
+  window.addEventListener("wphEVOEvents", function (ev) {
+        
+        //console.log(ev.data);
+
+
+        if(ev.data == 'minresize'){            
+            
+            $(".text-wrapper").addClass('iframe-flex');
+            $("#iframe").addClass('iframe-small');
+
+            setTimeout(function() {
+                $(".text-bottom").css("display", "block");                
+                $("#iframe-wrapper").css("width", "500px");
+                $("#iframe-wrapper").css("flex-basis", "500px");
+                $("#iframe-wrapper").css("margin-bottom", "0px");
+                $("#tl-custom-main").css("display", "block");
+                $("#tl-info-txt").css("display", "block");
+                $(".m_terms").css("display", "block");
+                $(window).scrollTop(0);
+                //console.log("HERE!!");
+            }, 200);
+                        
+        }
+
+        if(ev.data == 'maxresize'){
+            
+            $(".text-wrapper").removeClass('iframe-flex');
+            $("#iframe").removeClass('iframe-small');
+            
+        }
+
+        if(ev.data == 'scrollToTop'){
+            
+            console.log(ev.data);
+            $('html, body').animate({scrollTop:300}, 'slow');
+            
+        }
+
+        if(ev.data == 'scrollToTopPrescoring'){
+
+            console.log(ev.data);
+            $('html, body').animate({scrollTop:150}, 'slow');
+
+        }
+
+        if(ev.data == 'scrollToTopResultCustomModal'){
+
+            console.log(ev.data);
+            $('html, body').animate({scrollTop: document.getElementById('iframe').offsetHeight/2 - document.getElementById('sticky-wrapper').offsetHeight}, 'slow');
+
+        }
+
+        //[2023-02-20] FBB escuchamos eventos para ocultar follow.
+        if(ev.data == 'hidefollow'){
+            $("#wphFollow").hide();        
+        }
+      
+  });
+}
